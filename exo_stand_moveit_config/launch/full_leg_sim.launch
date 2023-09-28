@@ -1,0 +1,15 @@
+<launch>
+    <!-- Launch Your robot arms launch file which loads the robot in Gazebo and spawns the
+    controllers -->
+    <include file = "$(find exo_stand)/launch/leg_urdf.launch" />
+
+    <!-- Launch Moveit Move Group Node -->
+    <include file = "$(find exo_stand_moveit_config)/launch/move_group.launch" />
+
+    <!-- Run Rviz and load the default configuration to see the state of the move_group node -->
+    <arg name="use_rviz" default="true" />
+    <include file="$(find exo_stand_moveit_config)/launch/moveit_rviz.launch" if="$(arg
+    use_rviz)">
+        <arg name="rviz_config" value="$(find exo_stand_moveit_config)/launch/moveit.rviz"/>
+    </include>
+</launch>

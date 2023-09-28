@@ -1,0 +1,30 @@
+#This is a movit contoller connecting follow_joint_trajectory controller with JointTrajectoryController
+
+controller_list:
+  - name: right_group_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+    - joint1
+    - joint2
+
+  - name: left_group_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+    - joint3
+    - joint4
+
+  # - name: right_foot_controller
+  #   action_ns: follow_joint_trajectory
+  #   type: FollowJointTrajectory
+  #   joints:
+  #   - joint5
+
+  # - name: left_foot_controller
+  #   action_ns: follow_joint_trajectory
+  #   type: FollowJointTrajectory
+  #   joints:
+  #   - joint6

@@ -1,0 +1,10 @@
+sensors:
+  - sensor_plugin: occupancy_map_monitor/PointCloudOctomapUpdater
+    point_cloud_topic: /camera/depth/color/points    # D435i点云话题信息
+    max_range: 1.5     # 点云最大距离，滤除噪声，单位m，默认值5
+    point_subsample: 2
+    padding_offset: 0.1
+    padding_scale: 1.0
+    max_update_rate: 0.5   # 0.2，则每5秒更新一次
+    filtered_cloud_topic: filtered_cloud
+    ns: kinect

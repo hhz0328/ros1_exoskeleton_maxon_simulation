@@ -1,0 +1,9 @@
+<launch>
+    <!--//这个参数是octomap所在坐标系，可以自己指定-->
+    <param name="octomap_frame" type="string" value="odom_combined" />            
+    <!--//octomap的分辨率，越小分辨率越高，越消耗系统资源。0.02m分辨率还行-->
+    <param name="octomap_resolution" type="double" value="0.005" />                        
+    <param name="max_range" type="double" value="5.0" />
+    <!--//将yaml文件里的参数传到ros参数服务器-->
+    <rosparam command="load" file="$(find exo_stand_moveit_config)/config/sensors_D435i_pointcloud.yaml" />
+</launch>
