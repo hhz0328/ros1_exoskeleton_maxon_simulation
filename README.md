@@ -4,5 +4,6 @@
 ## 2）环境配置
 （1）**用到的模块**：gazebo，rviz，moveit
 
-（2）**编译过程**：将以上的功能包放入到‘/catkin_ws/src’，再在'/catkin_ws'中打开终端用**catkin_make**命令进行编译
+（2）**编译过程**：将以上的功能包放入到 **/catkin_ws/src** ，再在 **/catkin_ws** 中打开终端用 **catkin_make** 命令进行编译
 ## 3）使用
+### （1）
