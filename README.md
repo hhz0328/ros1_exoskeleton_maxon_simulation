@@ -19,3 +19,7 @@
 ```
   $ rosrun exo_stand_control exo_stand_fk
 ```
+- （4）配合intel D435i深度相机，将障碍物3d点云导入到仿真环境中（注意同一时间只能打开一个rviz，否则会报错，所以在使用时要使用 **ctrl+c** 关闭先前打开的联合仿真终端命令）：
+```
+  $ roslaunch exo_stand_moveit_config exo_stand_intelD435i_obstacle_pointcloud.launch
+```
