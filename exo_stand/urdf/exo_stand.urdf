@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="exo_stand">
+
+  <link name="world"/>
+  <joint name="base_joint" type="fixed">
+     <parent link="world"/>
+     <child link="base_link"/>
+     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
+  </joint>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.002599 -8.057E-06 0.36605"
+        rpy="0 0 0" />
+      <mass
+        value="76.873" />
+      <inertia
+        ixx="11.324"
+        ixy="-1.2289E-06"
+        ixz="0.7325"
+        iyy="5.8291"
+        iyz="-3.071E-05"
+        izz="8.9868" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exo_stand/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exo_stand/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="3.1492E-05 -0.049991 -0.34394"
+        rpy="0 0 0" />
+      <mass
+        value="1.0253" />
+      <inertia
+        ixx="0.0012561"
+        ixy="-1.135E-08"
+        ixz="1.7024E-07"
+        iyy="0.0017479"
+        iyz="-3.2591E-06"
+        izz="0.00065826" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exo_stand/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exo_stand/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0.31209 -0.1705 1.1229"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="500"
+      velocity="300" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.016028 0.034997 -0.34408"
+        rpy="0 0 0" />
+      <mass
+        value="0.45601" />
+      <inertia
+        ixx="0.00085102"
+        ixy="-8.69E-05"
+        ixz="2.1456E-08"
+        iyy="0.0013424"
+        iyz="-8.565E-06"
+        izz="0.0012002" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exo_stand/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exo_stand/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0 -0.0081 -0.398"
+      rpy="0 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-2.355"
+      upper="0"
+      effort="500"
+      velocity="300" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="-3.1492E-05 0.049991 -0.34394"
+        rpy="0 0 0" />
+      <mass
+        value="1.0253" />
+      <inertia
+        ixx="0.0012561"
+        ixy="-1.135E-08"
+        ixz="-1.7024E-07"
+        iyy="0.0017479"
+        iyz="3.2591E-06"
+        izz="0.00065826" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exo_stand/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exo_stand/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0.31209 0.1705 1.1229"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="500"
+      velocity="300" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.016271 -0.035213 -0.34339"
+        rpy="0 0 0" />
+      <mass
+        value="0.45601" />
+      <inertia
+        ixx="0.0010254"
+        ixy="0.00014361"
+        ixz="-2.5685E-06"
+        iyy="0.0013601"
+        iyz="9.0158E-06"
+        izz="0.0013922" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exo_stand/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://exo_stand/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0 0.0081 -0.398"
+      rpy="0 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="2.355"
+      effort="500"
+      velocity="300" />
+  </joint>
+
+  <link name="link5"/>
+  <joint name="joint5" type="fixed">
+    <origin xyz="0 0 -0.4" rpy="0 0 0" />
+    <parent link="link2" />
+    <child link="link5" />
+  </joint>
+
+  <link name="link6"/>
+  <joint name="joint6" type="fixed">
+    <origin xyz="0 0 -0.4" rpy="0 0 0" />
+    <parent link="link4" />
+    <child link="link6" />
+  </joint>
+
+  
+  <transmission name="link_1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint1">     
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>	
+    <actuator name="link_1_motor">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="link_2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint2">     
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>	
+    <actuator name="link_2_motor">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="link_3_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint3">     
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="link_3_motor">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+  <transmission name="link_4_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint4">     
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+    </joint>	
+    <actuator name="link_4_motor">
+        <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+ 
+
+
+  <gazebo>
+    <plugin name="control" filename="libgazebo_ros_control.so">
+          <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+
+
+
+  <gazebo reference="link1">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="link2">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="link3">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo reference="link4">
+    <selfCollide>true</selfCollide>
+  </gazebo>  
+
+
+</robot>

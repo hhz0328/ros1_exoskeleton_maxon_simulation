@@ -1,0 +1,24 @@
+#Instead of using TAB for indentation, use two spaces at the place of one TAB
+
+#Controller to control robot legs, joint1&2 belongs to right leg, joint3&4 belongs to left leg.
+right_group_controller:
+  type: "position_controllers/JointTrajectoryController"
+  joints: [joint1, joint2]
+
+left_group_controller:
+  type: "position_controllers/JointTrajectoryController"
+  joints: [joint3, joint4]
+
+#Controller to control end effector joints
+right_foot_controller:
+  type: "position_controllers/JointTrajectoryController"
+  joints: [joint5]
+
+left_foot_controller:
+  type: "position_controllers/JointTrajectoryController"
+  joints: [joint6]  
+
+#Controller to continuously publish joint states/positions
+joint_state_controller:
+  type: "joint_state_controller/JointStateController"
+  publish_rate: 50
