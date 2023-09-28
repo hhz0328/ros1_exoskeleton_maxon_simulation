@@ -31,7 +31,7 @@
 ```
   $ rosrun exo_stand_status listener_continue_trajectory
 ```
-- **（7）将录制的.bag文件转换成.csv格式并导出到工作空间下（在功能包rosbag_to_csv中，需要特别注意osbag_to_csv这功能包在catkin_make之前，需要更新一下rosdep，否则会显示编译出错）：**
+- **（7）将录制的.bag文件转换成.csv格式并导出到工作空间下（在功能包rosbag_to_csv中，需要特别注意rosbag_to_csv这功能包在catkin_make之前，需要更新一下rosdep，否则会显示编译出错）：**
 ```
   $ rosrun rosbag_to_csv rosbag_to_csv.py
 ```
