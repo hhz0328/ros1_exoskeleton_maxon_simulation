@@ -9,4 +9,5 @@
 - （1）打开联合仿真：
 ```
   $ roscore
+  $ roslaunch exo_stand_moveit_config full_leg_sim.launch
 ```
