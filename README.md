@@ -5,6 +5,8 @@
 在ros1-noetic中实现了外骨骼机器人仿真，实现了外骨骼机器人的关节角度读取并发布、视觉测距、基于3d点云的障碍物识别避障、仿真机器人运动轨迹的自定义规划。
 
 视频展示（来源于本人B站）：https://www.bilibili.com/video/BV1f94y157Qa/?spm_id_from=333.1007.0.0
+
+![]([https://github.com/Sophia-11/Awesome-CV-Paper-Review/blob/master/images/8.jpg](https://github.com/hhz0328/ros_exoskeleton_maxon_simulation/blob/main/exo_stand_control/exo_stand_pointcloud_orientation.cpp%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.png))
 ## 2）环境配置
 （1）**用到的模块**：gazebo，rviz，moveit
 
