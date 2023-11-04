@@ -6,13 +6,13 @@
 
 视频展示（来源于本人B站）：https://www.bilibili.com/video/BV1f94y157Qa/?spm_id_from=333.1007.0.0
 
-![]([https://github.com/Sophia-11/Awesome-CV-Paper-Review/blob/master/images/8.jpg](https://github.com/hhz0328/ros_exoskeleton_maxon_simulation/blob/main/exo_stand_control/exo_stand_pointcloud_orientation.cpp%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.png))
+![](https://github.com/hhz0328/ros_exoskeleton_maxon_simulation/blob/main/exo_stand_control/exo_stand_pointcloud_orientation.cpp%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.png)
 ## 2）环境配置
 （1）**用到的模块**：gazebo，rviz，moveit
 
 （2）**编译过程**：将以上的功能包放入到 **/catkin_ws/src** ，再在 **/catkin_ws** 中打开终端用 **catkin_make** 命令进行编译
 ## 3）使用
-- **（1）打开联合仿真（可以通过moveit提供的交互界面，对机器人进行控制）：**
+- **（1）打开联合仿真（可以通过movei提供的交互界面，对机器人进行控制）：**
 ```
   $ roscore
   $ roslaunch exo_stand_moveit_config full_leg_sim.launch
