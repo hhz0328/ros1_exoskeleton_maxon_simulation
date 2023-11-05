@@ -1,6 +1,4 @@
-# ros_exoskeleton_maxon_simulation
-## 软件包更新时间
-2023.7.28
+# ros_exoskeleton_maxon_simulation——2023.7.28
 ## 1）功能介绍
 在ros1-noetic中实现了外骨骼机器人仿真，实现了外骨骼机器人的关节角度读取并发布、视觉测距、基于3d点云的障碍物识别避障、仿真机器人运动轨迹的自定义规划。
 
