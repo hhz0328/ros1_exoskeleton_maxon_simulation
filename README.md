@@ -2,7 +2,7 @@
 ## 1）功能介绍
 在ros1-noetic中实现了外骨骼机器人仿真，实现了外骨骼机器人的关节角度读取并发布、视觉测距、基于3d点云的障碍物识别避障、仿真机器人运动轨迹的自定义规划。
 
-配套实物机器人控制代码：https://github.com/hhz0328/canopen_maxon_control
+配套实物机器人控制代码：https://github.com/hhz0328/ros1_canopen_maxon_control
 
 仿真机器人展示视频（来源于本人B站）：https://www.bilibili.com/video/BV1f94y157Qa/?spm_id_from=333.1007.0.0
 
