@@ -8,6 +8,24 @@
 
 ![](https://github.com/hhz0328/ros_exoskeleton_maxon_simulation/blob/main/%E4%BB%BF%E7%9C%9F%E6%8E%A7%E5%88%B6%E6%A1%86%E6%9E%B6.jpg)
 
+<div align="center">
+<table>
+<tr>
+<td>
+
+![image](https://github.com/hhz0328/hhz0328/blob/main/%E5%9B%BE%E5%BA%93/2.gif)   
+
+</td>
+<td>
+
+![image](https://github.com/hhz0328/hhz0328/blob/main/%E5%9B%BE%E5%BA%93/3.gif)   
+
+</td>
+</tr>
+</table>
+</div>
+
+
 ## 2）环境配置
 （1）**用到的模块**：gazebo，rviz，moveit
 
