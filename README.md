@@ -60,3 +60,6 @@
 ```
   $ rosrun rosbag_to_csv rosbag_to_csv.py
 ```
+
+## GOOD LUCK
+坚持开源，共同进步！有问题，可以通过主页邮箱留言，也可以issue提问
