@@ -31,7 +31,7 @@
 
 （2）**编译过程**：将以上的功能包放入到 **/catkin_ws/src** ，再在 **/catkin_ws** 中打开终端用 **catkin_make** 命令进行编译
 ## 3）使用
-- **（1）打开联合仿真（可以通过movei提供的交互界面，对机器人进行控制）：**
+- **（1）打开联合仿真gazebo&rviz（可以通过movei提供的交互界面，对机器人进行控制）：**
 ```
   $ roscore
   $ roslaunch exo_stand_moveit_config full_leg_sim.launch
