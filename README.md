@@ -6,7 +6,7 @@
 
 仿真机器人展示视频（来源于本人B站）：https://www.bilibili.com/video/BV1f94y157Qa/?spm_id_from=333.1007.0.0
 
-![](https://github.com/hhz0328/ros_exoskeleton_maxon_simulation/blob/main/%E4%BB%BF%E7%9C%9F%E6%8E%A7%E5%88%B6%E6%A1%86%E6%9E%B6.jpg)
+![](https://github.com/hhz0328/ros1_exoskeleton_maxon_simulation/blob/noetic/%E4%BB%BF%E7%9C%9F%E6%8E%A7%E5%88%B6%E6%A1%86%E6%9E%B6.jpg)
 
 <div align="center">
 <table>
